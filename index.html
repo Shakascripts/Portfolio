@@ -454,6 +454,26 @@
     color: var(--green-dim);
   }
 
+  .proj-media--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+  }
+  .proj-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-faint);
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .proj:hover .proj-placeholder svg { stroke: var(--green); filter: drop-shadow(0 0 8px var(--green-glow)); }
+  .proj:hover .proj-placeholder span { color: var(--green-dim); }
+
   .fs-overlay {
     position: fixed; inset: 0;
     z-index: 10000;
@@ -672,7 +692,7 @@
 
   <div class="stats-row">
     <div class="stat-cell"><div class="stat-val">1+</div><div class="stat-label">Years exp</div></div>
-    <div class="stat-cell"><div class="stat-val">8+</div><div class="stat-label">Projects</div></div>
+    <div class="stat-cell"><div class="stat-val">10+</div><div class="stat-label">Projects</div></div>
     <div class="stat-cell"><div class="stat-val">100%</div><div class="stat-label">Satisfaction</div></div>
   </div>
 
@@ -734,9 +754,9 @@
         </div>
         <div class="proj-info">
           <div class="proj-idx">Project 02</div>
-          <h3>Realistic NPC System</h3>
-          <p>An AI-driven, performance-optimized Roblox NPC awareness system featuring FOV + proximity sensing, real-time head and body tracking, behavior and approach analysis, contextual reaction state machines, multi-rig (R6/R15) support, and a scalable modular architecture designed for believable, next-gen NPC behavior.</p>
-          <div class="proj-tags"><span class="ptag">Luau</span><span class="ptag">DataStore</span><span class="ptag">Optimization</span></div>
+          <h3>NPC Realness System</h3>
+          <p>An AI-driven NPC awareness and reaction framework featuring dual-mode detection (FOV vision cone + proximity sensing), real-time smooth head and body tracking with exponential decay, approach analysis (speed, direction, armed status, elevation), a six-state reaction machine (Idle, Alert, Cautious, Startled, Suspicious, Curious), loitering and erratic behavior detection, startled body-spin reactions, threat-based multi-player targeting, R6/R15 auto-detection, and a fully modular architecture managed via CollectionService tagging.</p>
+          <div class="proj-tags"><span class="ptag">Luau</span><span class="ptag">Game Systems</span><span class="ptag">Anti-Exploit</span><span class="ptag">Optimization</span></div>
         </div>
       </div>
 
@@ -758,6 +778,48 @@
           <h3>Fun Word Game</h3>
           <p>A two-player, round-based Roblox game implementing synchronized seating, role-based turn logic, constrained lexical input, and deterministic word validation to support low-latency, repeatable social gameplay.</p>
           <div class="proj-tags"><span class="ptag">Luau</span><span class="ptag">DataStore</span><span class="ptag">UI / UX</span><span class="ptag">Game Systems</span><span class="ptag">Anti-Exploit</span><span class="ptag">Optimization</span></div>
+        </div>
+      </div>
+
+      <div class="proj">
+        <div class="proj-media">
+          <video autoplay muted loop playsinline><source src="animalSystem.mp4" type="video/mp4"></video>
+          <div class="proj-vid-controls">
+            <button class="vc-btn pause-toggle" title="Pause / Play">
+              <svg class="ico-pause" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+              <svg class="ico-play" viewBox="0 0 24 24" style="display:none"><polygon points="6,4 20,12 6,20"/></svg>
+            </button>
+            <button class="vc-btn fs-trigger" title="Expand">
+              <svg viewBox="0 0 24 24"><path d="M3 3h6v2H5v4H3V3zm12 0h6v6h-2V5h-4V3zM3 15h2v4h4v2H3v-6zm16 4h-4v2h6v-6h-2v4z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-idx">Project 04</div>
+          <h3>Hunting & Skinning System</h3>
+          <p>A modular Roblox hunting system featuring AI-driven animal NPCs with multi-state behavior (idle, wander, alert, flee), persistent corpse management supporting 50 concurrent dead NPCs, a carry-and-throw physics system, and a custom GUI-based progressive skinning mechanic with cinematic camera, interruptible progress, and configurable loot rewards — all server-authoritative with full exploit prevention.</p>
+          <div class="proj-tags"><span class="ptag">Luau</span><span class="ptag">Game Systems</span><span class="ptag">UI / UX</span><span class="ptag">Anti-Exploit</span><span class="ptag">Optimization</span></div>
+        </div>
+      </div>
+
+      <div class="proj">
+        <div class="proj-media">
+          <video autoplay muted loop playsinline><source src="rocket.mp4" type="video/mp4"></video>
+          <div class="proj-vid-controls">
+            <button class="vc-btn pause-toggle" title="Pause / Play">
+              <svg class="ico-pause" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+              <svg class="ico-play" viewBox="0 0 24 24" style="display:none"><polygon points="6,4 20,12 6,20"/></svg>
+            </button>
+            <button class="vc-btn fs-trigger" title="Expand">
+              <svg viewBox="0 0 24 24"><path d="M3 3h6v2H5v4H3V3zm12 0h6v6h-2V5h-4V3zM3 15h2v4h4v2H3v-6zm16 4h-4v2h6v-6h-2v4z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-idx">Project 05</div>
+          <h3>Rocket Launcher Game</h3>
+          <p>A complete Roblox rocket launcher arena game built solo using ProfileService, featuring a coin economy with a gacha roll system, tiered weapon crates with duplicate-to-scrap protection, an XP/leveling progression (1–50), daily login streaks, a rotating cosmetic shop, instant revive monetization, daily mission framework, multiple game modes (TDM & FFA), contextual onboarding for new players, and a full Robux monetization pipeline — architected for scalable weekly content updates.</p>
+          <div class="proj-tags"><span class="ptag">Luau</span><span class="ptag">ProfileService</span><span class="ptag">DataStore</span><span class="ptag">UI / UX</span><span class="ptag">Game Systems</span><span class="ptag">Optimization</span></div>
         </div>
       </div>
 
