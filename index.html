@@ -100,16 +100,16 @@
   .proj-card:hover { background: rgba(42, 90, 138, 0.08); }
   .proj-num { position: absolute; top: 0; right: 0; background: var(--accent); color: var(--bg-deep); font-family: var(--display); font-size: 0.68rem; font-weight: 700; padding: 4px 10px; letter-spacing: 1px; z-index: 2; }
 
-  .proj-media { position: relative; height: 160px; background: var(--bg-deep); overflow: hidden; border-bottom: 1.5px solid var(--line); }
+  .proj-media { position: relative; aspect-ratio: 16 / 9; background: var(--bg-deep); overflow: hidden; border-bottom: 1.5px solid var(--line); }
   .proj-media video { width: 100%; height: 100%; object-fit: cover; display: block; }
   .proj-vid-controls { position: absolute; bottom: 8px; left: 8px; display: flex; gap: 4px; z-index: 3; }
   .vc-btn { width: 28px; height: 28px; border: 1.5px solid rgba(200,218,234,0.2); background: rgba(15,34,56,0.85); color: var(--text); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
   .vc-btn:hover { border-color: var(--accent); color: var(--accent); }
   .vc-btn svg { width: 12px; height: 12px; fill: currentColor; }
 
-  .proj-info { padding: 18px 20px; }
-  .proj-info h3 { font-family: var(--display); font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
-  .proj-info p { font-size: 0.72rem; color: var(--text-dim); line-height: 1.7; margin-bottom: 12px; }
+  .proj-info { padding: 14px 20px; }
+  .proj-info h3 { font-family: var(--display); font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+  .proj-info p { font-size: 0.72rem; color: var(--text-dim); line-height: 1.6; margin-bottom: 10px; }
   .proj-tags { display: flex; flex-wrap: wrap; gap: 4px; }
   .ptag { font-size: 0.6rem; letter-spacing: 0.8px; text-transform: uppercase; padding: 3px 8px; border: 1px solid var(--line-dim); color: var(--text-faint); transition: all 0.2s; }
   .proj-card:hover .ptag { border-color: rgba(240,192,64,0.25); color: var(--accent-dim); }
@@ -225,7 +225,7 @@
     <div class="projects-grid">
       <div class="proj-card"><div class="proj-num">01</div>
         <div class="proj-media"><video autoplay muted loop playsinline><source src="slopontop portfolio.mp4" type="video/mp4"></video><div class="proj-vid-controls"><button class="vc-btn pause-toggle" title="Pause / Play"><svg class="ico-pause" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg><svg class="ico-play" viewBox="0 0 24 24" style="display:none"><polygon points="6,4 20,12 6,20"/></svg></button><button class="vc-btn fs-trigger" title="Expand"><svg viewBox="0 0 24 24"><path d="M3 3h6v2H5v4H3V3zm12 0h6v6h-2V5h-4V3zM3 15h2v4h4v2H3v-6zm16 4h-4v2h6v-6h-2v4z"/></svg></button></div></div>
-        <div class="proj-info"><h3>Save a ___ from LAVA!</h3><p>This is the description.</p><div class="proj-tags"></div></div>
+        <div class="proj-info"><h3>Save a ___ from LAVA!</h3><p>Worked on this game along with another scripter due to me being apart of the project late..</p><div class="proj-tags"></div></div>
       </div>
 
       <div class="proj-card"><div class="proj-num">02</div>
